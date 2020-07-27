@@ -85,23 +85,6 @@ class HomePageState extends State<HomePage> {
                 }
               }),
         )
-        // StreamBuilder<QuerySnapshot>(
-        //   stream: Firestore.instance
-        //       .collection('users')
-        //       .where("uid", isEqualTo: uid)
-        //       .snapshots(),
-        //   builder:
-        //       (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-        //     if (snapshot.hasError) return new Text('Error: ${snapshot.error}');
-        //     switch (snapshot.connectionState) {
-        //       case ConnectionState.waiting:
-        //         return Text('Loading...');
-        //       default:
-        //         final document = snapshot.data.documents.single.data;
-        //         return Text(document['name']);
-        //     }
-        //   },
-        // )
         );
   }
 }
